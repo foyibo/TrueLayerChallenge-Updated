@@ -1,0 +1,23 @@
+#Addtional Task 1
+#Scripts runs manually (interatively) by user but fails to run 
+#non-interactively i.e. via crontab
+
+LIKELY EXPLANATION
+
+The Linux Shell behaves in slightly different ways when logged-in interactively 
+versus non-interactively. 
+
+This is because .profile or .bash_profile are only executed for interactive 
+sessions. This subtle difference may be why something (a command, script, alias, etc) 
+works perfectly when logged in interactively but there may be issues with the same 
+command in non-interactive mode, as it may not be available in that mode. 
+
+One way to resolve this is to configure the .bash_profile to reference .bashrc and 
+put all of your configuration in .bashrc by using the source command or dot operator.
+
+Also, it may be due to variable scope.
+there are global environmental or system wide variables that may be referenced 
+in a script these system-wide variables reside in the etc/profile, etc/bashrc, 
+or the .bash_profile, and .bashrc in the user home directory. And changes to this 
+variables would need to be exported to the current session so they are available 
+to any process and sub processes that reference them.

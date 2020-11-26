@@ -1,0 +1,20 @@
+Additional Task 2
+
+#Name the two main Linux Families
+
+By families I'm assumming distros, that is the two main widely used Linux distributions.
+
+Linux started as an open source project, that has evolved and matured our time.
+In my view, the two main families or distros based on their package management system are:  
+
+Debian based Linux families - Debian, Ubuntu (and all it's variant), Linux Mint, etc. 
+they all use the (Advance Package Tool) APT for software and application management and 
+they usually have the .deb extensions
+
+While
+
+Red Hat Linux - Fedora, RHEL, CentOS, Arch Linux, etc.
+uses (RedHat Package Management) RPM and yum tools, usually with the .rpm extensions.
+
+But there are many forks and variants of Linux in use today, all these derivatives are 
+all based off the main linux kernel.

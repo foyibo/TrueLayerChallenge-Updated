@@ -1,0 +1,22 @@
+Additional Task 3
+
+#Describe the purpose of what is commonly called CAT EOF
+
+CAT EOF is also known as 'here documents' or just as 'here-docs'. 
+
+A here document is a special-purpose code block. It uses a form of 
+I/O redirection to feed a command list to an interactive program or a command.
+Commands such as ftp, cat, or the ex text editor can take advantage of these I/O 
+redirections.
+
+The EOF is a limit string that delineates (frames) the command list. 
+The special symbol << precedes the limit string. This has the effect 
+of redirecting the output of a command block into the stdin of the program or command.
+While the output of the program or command can also be redirected or appended to a file.
+The EOF is also known as here-tag. 
+
+A here document supports parameter and command substitution. It is therefore 
+possible to pass different parameters to the body of the here document, 
+changing its output accordingly.
+
+Please see my scripts (catEOFscript) for an example of this.

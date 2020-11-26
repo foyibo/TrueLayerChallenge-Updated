@@ -1,0 +1,33 @@
+Additional Task 5
+
+#Define a single line command to be run on your computer and to add your 
+#ssh key to a remote computer. 
+
+This question is not very clear to me, but below is the single line ssh command that
+I will normally use to make a remote connection to an ssh enabled server using a 
+public/private key cryptography.
+
+It is very important that the ssh command is issued from the folder or location
+where the key-pair (also known as identity file) is located, otherwise connection 
+will not be establised especially when the -i flag is used. The -p flag for port-number
+is optional except where the default port 22 has been changed on the server. 
+
+ ssh -i /path/to-my-key-pair [-p] [port_number] user-name@server-name
+
+ssh -i /path/to-identity-file [-p] [22] user-name@server-public-ipaddress
+
+
+
+
+#Just adding the below single line commands 
+#These implementations will depends on server configuration and other parameters
+
+for passwordless connection:
+
+~/path/to-my-key-pair# ssh [-p] [port_number] user-name@server-name
+
+generating ssh keys
+ssh-keygen
+
+pushing key to server
+ssh -T user@server-address
